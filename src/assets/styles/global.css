@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: local('Quicksand'), local('Quicksand-Regular'),
+    url('assets/fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: local('Quicksand'), local('Quicksand-Bold'),
+    url('assets/fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
+  font-style: bold;
+  /* font-weight: bold; */
+}
+@font-face {
+  font-family: 'Quicksand-SemiBold';
+  src: local('Quicksand'), local('Quicksand-SemiBold'),
+    url('assets/fonts/Quicksand/Quicksand-SemiBold.ttf') format('truetype');
+  font-style: bold;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Quicksand';
+}
+html {
+  min-width: 300px;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overflow: auto;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  border: 0;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+b {
+  font-weight: bold;
+  font-family: 'Quicksand-Bold';
+}

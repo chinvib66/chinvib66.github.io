@@ -1,0 +1,38 @@
+.navbar {
+  padding: 1.2rem 0;
+  box-shadow: none;
+  z-index: auto;
+}
+.navbar .navbar-brand img {
+  max-height: 4.8rem;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-links,
+.navbar .navbar-links a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar .nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  max-height: 72px;
+  width: auto;
+  margin: 9px;
+}
+
+.social-icon {
+  color: #2ec4b6;
+}
+
+.icon .icon-button:hover,
+.icon-button:hover {
+  background-color: #011627 !important;
+}
