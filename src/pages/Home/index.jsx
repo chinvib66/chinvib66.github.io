@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { Container, Grid } from '@material-ui/core';
 
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 export const HomePage = () => {
   const width = window.innerWidth;
@@ -63,15 +64,15 @@ export const HomePage = () => {
             justify="center"
             alignItems="center"
           >
-            <Grid md={6} sm={12} className={clsx('linkbox')}>
-              <a className={'link'} href={'/experiences'}>
+            <Grid item md={6} sm={12} className={clsx('linkbox')}>
+              <Link className={'link'} to={'/experiences'}>
                 Previous Experiences
-              </a>
+              </Link>
             </Grid>
-            <Grid md={6} sm={12} className={clsx('linkbox')}>
-              <a className={'link'} href={'/projects'}>
+            <Grid item md={6} sm={12} className={clsx('linkbox')}>
+              <Link className={'link'} to={'/projects'}>
                 Projects
-              </a>
+              </Link>
             </Grid>
           </Grid>
         </Container>

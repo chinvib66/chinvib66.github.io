@@ -6,6 +6,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import DarkModeIcon from '@material-ui/icons/Brightness4';
 import CVLogo from 'assets/images/logo-900.png';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
   const width = window.innerWidth;
@@ -14,9 +15,9 @@ export const NavBar = () => {
     <nav className={clsx('navbar', 'is-transparent')}>
       <Container className={clsx('nav-container')}>
         <div className={clsx('navbar-brand')}>
-          <a href="/">
+          <Link to={''}>
             <img src={CVLogo} alt="Chinmay Vibhute Logo" />
-          </a>
+          </Link>
         </div>
         <div className={clsx('navbar-links')}>
           <a

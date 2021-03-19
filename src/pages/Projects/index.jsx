@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import './styles.css';
 import { Container, Grid } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const personal_projects = [
   {
@@ -59,7 +60,10 @@ export const ProjectsPage = () => {
           <div className={'title'}>Academic Projects</div>
           <Container className={clsx('academic', 'projects', 'list')}>
             {acad_projects.map((item, index) => (
-              <div className={clsx('project', 'item')}>
+              <div
+                key={`${item.name} ${index}`}
+                className={clsx('project', 'item')}
+              >
                 <div className={clsx('title-wrapper')}>
                   <div className={clsx('title')}>{item.name}</div>
                   {item.link && (
@@ -80,7 +84,10 @@ export const ProjectsPage = () => {
           <div className={'title'}>Personal Projects</div>
           <Container className={clsx('projects', 'list')}>
             {personal_projects.map((item, index) => (
-              <div className={clsx('project', 'item')}>
+              <div
+                key={`${item.name} ${index}`}
+                className={clsx('project', 'item')}
+              >
                 <div className={clsx('title-wrapper')}>
                   <div className={clsx('title')}>{item.name}</div>
                   {item.link && (
@@ -104,15 +111,15 @@ export const ProjectsPage = () => {
           justify="center"
           alignItems="center"
         >
-          <Grid md={6} sm={12} className={clsx('linkbox')}>
-            <a className={'link'} href={'/experiences'}>
+          <Grid item md={6} sm={12} className={clsx('linkbox')}>
+            <Link className={'link'} to={'/experiences'}>
               Previous Experiences
-            </a>
+            </Link>
           </Grid>
-          <Grid md={6} sm={12} className={clsx('linkbox')}>
-            <a className={'link'} href={'/'}>
+          <Grid item md={6} sm={12} className={clsx('linkbox')}>
+            <Link className={'link'} to={'/'}>
               Home
-            </a>
+            </Link>
           </Grid>
         </Grid>
       </Container>

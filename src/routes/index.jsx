@@ -1,9 +1,11 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Switch, Route, HashRouter as Router } from 'react-router-dom';
 import { HomePage } from 'pages/Home';
 import { NavBar } from 'components/Nav';
 import { ProjectsPage } from 'pages/Projects';
 import { PrevExpPage } from 'pages/Experiences';
+
+import ScrollToTop from './scrollToTop';
 
 const routes = [
   {
@@ -45,6 +47,7 @@ const createRoutes = () => {
         path={route.path}
         render={() => (
           <div>
+            <ScrollToTop />
             <NavBar />
             <route.component />
           </div>

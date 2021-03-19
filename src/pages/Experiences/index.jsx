@@ -5,6 +5,7 @@ import SamieLogo from 'assets/images/samie.webp';
 
 import './styles.css';
 import { Container, Grid } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const prev_internships = [
   {
@@ -60,6 +61,7 @@ export const PrevExpPage = () => {
         <Container className={clsx('internship', 'list')}>
           {prev_internships.map((item, index) => (
             <div
+              key={`${item.company} ${index}`}
               className={clsx('internship', 'item', {
                 mobile: mobile,
                 reverse: !mobile && index % 2,
@@ -83,7 +85,10 @@ export const PrevExpPage = () => {
         <div className={'title'}> Freelancing Projects</div>
         <Container className={clsx('flprojects', 'list')}>
           {fl_projects.map((item, index) => (
-            <div className={clsx('flproject', 'item')}>
+            <div
+              key={`${item.name} ${index}`}
+              className={clsx('flproject', 'item')}
+            >
               <div className={clsx('title-wrapper')}>
                 <div className={clsx('title')}>{item.name}</div>
               </div>
@@ -101,15 +106,15 @@ export const PrevExpPage = () => {
           justify="center"
           alignItems="center"
         >
-          <Grid md={6} sm={12} className={clsx('linkbox')}>
-            <a className={'link'} href={'/projects'}>
+          <Grid item md={6} sm={12} className={clsx('linkbox')}>
+            <Link className={'link'} to={'/projects'}>
               Projects
-            </a>
+            </Link>
           </Grid>
-          <Grid md={6} sm={12} className={clsx('linkbox')}>
-            <a className={'link'} href={'/'}>
+          <Grid item md={6} sm={12} className={clsx('linkbox')}>
+            <Link className={'link'} to={'/'}>
               Home
-            </a>
+            </Link>
           </Grid>
         </Grid>
       </Container>
