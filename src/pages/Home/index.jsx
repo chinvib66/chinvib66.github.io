@@ -1,8 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Container } from '@material-ui/core';
-import GEHLogo from 'assets/images/GEHealthcare.png';
-import SamieLogo from 'assets/images/samie.webp';
+import { Container, Grid } from '@material-ui/core';
 
 import './styles.css';
 
@@ -57,61 +55,26 @@ export const HomePage = () => {
             interested in my profile.
           </small>
         </div>
-        <Container className={clsx('internships')}>
-          <div className={clsx('title', 'text-center')}>
-            Previous Internships
-          </div>
-          <div className={clsx('internship', 'list')}>
-            <div
-              className={clsx('internship', 'item', {
-                mobile: mobile,
-              })}
-            >
-              <div className={clsx('logo-wrapper')}>
-                <img alt="GE Healthcare Logo" src={GEHLogo} />
-              </div>
-              {/* <div className={clsx('link')}>---</div> */}
-              <div className={clsx('desc-wrapper')}>
-                <div className={clsx('company-name')}>
-                  GE Healthcare | Software Developer Intern (Early ID Program)
-                </div>
-                <small className={'date'}>May 2020 - Jul 2020</small>
-                <div className={clsx('intern-desc')}>
-                  Developed Windows Application for Material Declaration
-                  Document Parsing using Python & React JS
-                </div>
-              </div>
-            </div>
-            <div
-              className={clsx('internship', 'item', {
-                mobile: mobile,
-                reverse: mobile,
-              })}
-            >
-              <div className={clsx('desc-wrapper')}>
-                <div className={clsx('company-name')}>
-                  Samie Intellab Pte. Ltd. | Software Developer Intern
-                </div>
-                <small className={'date'}>May 2019 - Jun 2019</small>
-                <div className={clsx('intern-desc')}>
-                  Developed Dashboard for ADAS Platform and Implemented Color
-                  Percentage Measurement
-                </div>
-              </div>
-              {/* <div className={clsx('link')}>---</div> */}
-              <div className={clsx('logo-wrapper')}>
-                <img alt="Samie Intellab Logo" src={SamieLogo} />
-              </div>
-            </div>
-          </div>
-        </Container>
         <Container>
-          <div className={'title updated-soon'}>
-            Will be updating the website with more info as early as possible...
-          </div>
+          <Grid
+            container
+            className={clsx('links-to-other-pages')}
+            direction="row"
+            justify="center"
+            alignItems="center"
+          >
+            <Grid md={6} sm={12} className={clsx('linkbox')}>
+              <a className={'link'} href={'/experiences'}>
+                Previous Experiences
+              </a>
+            </Grid>
+            <Grid md={6} sm={12} className={clsx('linkbox')}>
+              <a className={'link'} href={'/projects'}>
+                Projects
+              </a>
+            </Grid>
+          </Grid>
         </Container>
-        <div className={clsx('projects')}></div>
-        <div className={clsx('competitions')}></div>
       </div>
     </div>
   );

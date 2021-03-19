@@ -1,0 +1,38 @@
+section.projects > .title {
+  text-align: center;
+  margin: 70px auto 20px auto;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+section .projects.list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .projects.list .project.item {
+  padding: 20px;
+  margin: 20px;
+  border-width: 2px;
+  border-color: #2ec4b6;
+  border-radius: 6px;
+  border-style: solid;
+  max-width: 800px;
+}
+
+section .projects.list .project.item .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .projects.list .project.item .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section .projects.list .project.item .date {
+  margin-bottom: 10px;
+}

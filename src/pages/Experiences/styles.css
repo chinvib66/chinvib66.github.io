@@ -1,0 +1,106 @@
+section.experience > .title,
+section.freelancing > .title {
+  text-align: center;
+  margin: 70px auto 20px auto;
+  font-size: 27px;
+  font-weight: bold;
+}
+section.experience > .internship.list {
+  margin: 30px auto;
+}
+
+section.experience .internship.list .link {
+  color: #2ec4b6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.experience .internship.list .internship.item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+section.experience .internship.list .internship.item.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  justify-content: space-between;
+}
+section.experience .internship.list .internship.item.mobile {
+  display: flex;
+  flex-direction: column;
+  /* align-items: stretch; */
+  justify-content: center;
+}
+section.experience .internship.list .internship.item.mobile.reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  /* align-items: stretch; */
+  justify-content: center;
+}
+section.experience .internship.list .internship.item {
+  margin: 40px auto;
+}
+section.experience .internship.list .internship.item div.logo-wrapper,
+section.experience .internship.list .internship.item div.desc-wrapper {
+  border-width: 2px;
+  border-color: #2ec4b6;
+  border-radius: 6px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 60px;
+  margin: 10px auto;
+}
+
+section.experience .internship.list .internship.item div.logo-wrapper > img {
+  max-width: 200px;
+}
+
+.internship.list .internship.item div .company-name {
+  font-size: 24px;
+}
+.internship.list .internship.item div .intern-desc {
+  /* margin: 20px auto auto auto; */
+}
+
+small.date {
+  margin-bottom: 20px;
+}
+
+section.freelancing .flprojects.list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.freelancing .flprojects.list .flproject.item {
+  padding: 20px;
+  margin: 20px;
+  border-width: 2px;
+  border-color: #2ec4b6;
+  border-radius: 6px;
+  border-style: solid;
+  max-width: 800px;
+}
+
+section.freelancing .flprojects.list .flproject.item .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.freelancing .flprojects.list .flproject.item .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section.freelancing .flprojects.list .flproject.item .date {
+  margin-bottom: 10px;
+}

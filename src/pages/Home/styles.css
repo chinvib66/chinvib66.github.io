@@ -53,7 +53,6 @@ div.title.updated-soon {
   min-height: 400px;
 }
 
-.experience .internships .title,
 .experience .brief .title {
   font-size: 2rem;
   font-weight: bold;
@@ -63,68 +62,6 @@ div.title.updated-soon {
   max-width: 820px;
   font-size: 1.25rem;
   margin: 30px auto;
-}
-
-.experience .internships .internship.list {
-  margin: 30px auto;
-}
-
-.experience .internships .internship.list .link {
-  color: #2ec4b6;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.experience .internships .internship.list .internship.item {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
-}
-.experience .internships .internship.list .internship.item.mobile {
-  display: flex;
-  flex-direction: column;
-  /* align-items: stretch; */
-  justify-content: center;
-}
-.experience .internships .internship.list .internship.item.mobile.reverse {
-  display: flex;
-  flex-direction: column-reverse;
-  /* align-items: stretch; */
-  justify-content: center;
-}
-.experience .internships .internship.list .internship.item {
-  margin: 40px auto;
-}
-.experience .internships .internship.list .internship.item div.logo-wrapper,
-.experience .internships .internship.list .internship.item div.desc-wrapper {
-  border-width: 2px;
-  border-color: #2ec4b6;
-  border-radius: 6px;
-  border-style: solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 60px;
-  margin: 10px auto;
-}
-
-.experience
-  .internships
-  .internship.list
-  .internship.item
-  div.logo-wrapper
-  > img {
-  max-width: 200px;
-}
-
-.internship.list .internship.item div .company-name {
-  font-size: 24px;
-}
-.internship.list .internship.item div .intern-desc {
-  /* margin: 20px auto auto auto; */
 }
 
 small.date {
