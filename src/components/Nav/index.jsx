@@ -15,9 +15,11 @@ export const NavBar = () => {
     <nav className={clsx('navbar', 'is-transparent')}>
       <Container className={clsx('nav-container')}>
         <div className={clsx('navbar-brand')}>
-          <Link to={''}>
-            <img src={CVLogo} alt="Chinmay Vibhute Logo" />
-          </Link>
+          <Tooltip title="Chinmay Vibhute">
+            <Link to={''}>
+              <img src={CVLogo} alt="Chinmay Vibhute Logo" />
+            </Link>
+          </Tooltip>
         </div>
         <div className={clsx('navbar-links')}>
           <a

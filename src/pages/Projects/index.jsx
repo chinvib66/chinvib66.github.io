@@ -36,7 +36,7 @@ const personal_projects = [
     link: 'https://chinmayvibhute.me/react-bulletin/',
   },
   {
-    name: 'AMesasgi: Anonymous Messaging Platform',
+    name: 'AMessagi: Anonymous Messaging Platform',
     date: '11 Jul 2018',
     description:
       'AMessagi is an anonymous messaging platform. Any Anonymous user can send messages to any registerd user with a unique address. This project was a learning project for practicing concepts of Django, MySQL, User Authentication, HTTP Sessions and Cookies.',
@@ -44,7 +44,30 @@ const personal_projects = [
   },
 ];
 
-const acad_projects = [];
+const acad_projects = [
+  {
+    name: 'Common Thorax Disease Classification',
+    details: 'Prof R. B. Roy, IIT Kharagpur',
+    date: 'Jan 2021 - Present',
+    description:
+      'Implemented DL model(s) for Classification of NIH Chest X Ray Dataset among 14 types of common thorax diseases. Achieved max average AUROC of 0.845, possibly in top 3 models for CXR14 classification ',
+  },
+  {
+    name: 'SmallCast: Stop Searching, Start Listening!',
+    details: 'Prof P. K. Dan, IIT Kharagpur',
+    date: 'Aug 2020 - Dec 2020',
+    description:
+      'Smallcast is an audio on demand platform, allowing users to listen to their favorite articles & blogs, on the go. The project involved in development of Audio Streaming Service and Rest API Services, Android Application, & Creator and Admin Dashboard ',
+    link: 'https://play.google.com/store/apps/details?id=com.smallcast',
+  },
+  {
+    name: 'Mini Solar Dome Application',
+    details: 'Prof P. Pattnaik, IIT Kharagpur',
+    date: 'Aug 2019 - Dec 2019',
+    description:
+      'Designed & developed Django REST API & React Native application for Mini Solar Dome Project’s management. Implemented features like Role-Based Access, Servicing, Survey & Feedback Workflows, Image capture & processing',
+  },
+];
 
 export const ProjectsPage = () => {
   // const width = window.innerWidth;
@@ -72,7 +95,9 @@ export const ProjectsPage = () => {
                     </a>
                   )}
                 </div>
-                <div className={clsx('date')}>{item.date}</div>
+                <div className={clsx('date')}>
+                  {item.date} | <b>{item.details}</b>
+                </div>
                 <div className={clsx('description')}>{item.description}</div>
               </div>
             ))}

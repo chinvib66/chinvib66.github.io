@@ -9,7 +9,12 @@
   src: local('Quicksand'), local('Quicksand-Bold'),
     url('assets/fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
   font-style: bold;
-  /* font-weight: bold; */
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: local('Quicksand'), local('Quicksand-Bold'),
+    url('assets/fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
+  font-style: bold;
 }
 @font-face {
   font-family: 'Quicksand-SemiBold';
@@ -85,11 +90,13 @@ a {
 a.custom {
   text-decoration: none;
   color: #2ec4b6;
+  font-weight: bold;
 }
 a.custom:hover {
   text-decoration: underline;
   text-decoration-color: #011627;
   color: #2ec4b6;
+  font-weight: bold;
 }
 
 section.hero {
