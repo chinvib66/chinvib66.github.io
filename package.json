@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -b website -d build"
+    "deploy": "npm run cleanup && gh-pages -b website -d build",
+    "cleanup": "gh-pages-clean"
   },
   "eslintConfig": {
     "extends": [
