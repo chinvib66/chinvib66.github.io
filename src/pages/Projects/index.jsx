@@ -58,7 +58,10 @@ const acad_projects = [
     date: 'Aug 2020 - Dec 2020',
     description:
       'Smallcast is an audio on demand platform, allowing users to listen to their favorite articles & blogs, on the go. The project involved in development of Audio Streaming Service and Rest API Services, Android Application, & Creator and Admin Dashboard ',
-    link: 'https://play.google.com/store/apps/details?id=com.smallcast',
+    link: {
+      href: 'https://play.google.com/store/apps/details?id=com.smallcast',
+      linkText: 'PlayStore',
+    },
   },
   {
     name: 'Mini Solar Dome Application',
@@ -76,7 +79,11 @@ export const ProjectsPage = () => {
     <div className={'project-page'}>
       <section className={'hero'}>
         <div className={clsx('title')}>Projects</div>
-        <div className={clsx('content')}></div>
+        <div className={clsx('content')}>
+          My Past Projects include work on Image Processing Utilities, Computer
+          Vision / Deep Learning Projects, Mobile Applications and Web
+          Development Projects.
+        </div>
       </section>
       {acad_projects && acad_projects.length > 0 && (
         <section className={clsx('projects', 'academic')}>
@@ -90,8 +97,8 @@ export const ProjectsPage = () => {
                 <div className={clsx('title-wrapper')}>
                   <div className={clsx('title')}>{item.name}</div>
                   {item.link && (
-                    <a className={'custom'} href={item.link}>
-                      Link To Project
+                    <a className={'custom'} href={item.link.href}>
+                      {item.link.linkText}
                     </a>
                   )}
                 </div>

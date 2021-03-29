@@ -27,9 +27,9 @@ export const HomePage = () => {
         <div className={clsx('intro', 'oneline', 'text-center')}>
           Aspiring Developer, {mobile ? <br /> : null}Computer Vision and Deep
           Learning Enthusiast
-          <br />
-          Good Human Being :)
-          <br />
+          {/* <br /> */}
+          {/* Good Human Being :) */}
+          {/* <br /> */}
           {/* <small>Also, still in the process of figuring out what I would love to pursue in my upcoming endeavors</small> */}
         </div>
         {/* <div className={'dev-image'}></div> */}
